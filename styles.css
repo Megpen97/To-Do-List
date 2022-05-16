@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: -10px;
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: #5c7e66;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid;
+}
+
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  color: #5c7e66;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(0.85);
+}
+
+.complete-btn,
+.trash-btn {
+  border: none;
+  color: #5c7e66;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.complete-btn:hover {
+  transform: scale(0.85);
+}
+
+.trash-btn:hover {
+  transform: scale(0.85);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  width: 350px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 0.3rem;
+  transition: all 0.5s ease;
+}
+
+.todo-item {
+  background-color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid;
+  width: 250px;
+  word-wrap: break-word;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #5c7e66;
+  width: 9rem;
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid;
+}
+
+.select::after {
+  content: "\25BC";
+  position: relative;
+  background-color: #5c7e66;
+  color: white;
+  top: 0;
+  right: 0;
+  padding: 0.35em;
+  margin-left: -39px;
+  border-radius: 5px;
+  pointer-events: none;
+}
